@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISCEV - Instituto Social e Cultural de Engenho Velho</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-hands-helping logo-icon"></i>
+                    <h1>ISCEV</h1>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul id="mainMenu">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#activities">Atividades</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Instituto Social e Cultural de Engenho Velho</h2>
+            <p>Transformando vidas através da cultura, educação e ações sociais no bairro Engenho Velho, Jaboatão dos Guararapes - PE</p>
+            <a href="#about" class="btn">Conheça nosso trabalho</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre o ISCEV</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>O <strong>Instituto Social e Cultural de Engenho Velho (ISCEV)</strong> é uma organização sem fins lucrativos localizada no bairro Engenho Velho, Jaboatão dos Guararapes, Pernambuco.</p>
+                    <p><strong>CNPJ:</strong> 09.057.152/0001-03</p>
+                    <p>Nosso objetivo é promover o desenvolvimento social e cultural da comunidade através de diversas atividades educativas, artísticas e de capacitação profissional.</p>
+                    <p>Atuamos desde 2010 oferecendo oportunidades de crescimento pessoal e profissional para crianças, jovens e adultos da nossa comunidade e regiões vizinhas.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/comunidade.jpg" alt="Comunidade do Engenho Velho">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modalidades -->
+    <section id="activities" style="background-color: var(--light);">
+        <div class="container">
+            <h2 class="section-title">Nossas Atividades</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/capoeira.jpg" alt="Capoeira">
+                    </div>
+                    <div class="card-content">
+                        <h3>Capoeira</h3>
+                        <p>Aulas de capoeira para crianças, jovens e adultos, promovendo cultura, disciplina e atividade física.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/percussao.jpg" alt="Percussão">
+                    </div>
+                    <div class="card-content">
+                        <h3>Aulas de Percussão</h3>
+                        <p>Ensino de instrumentos de percussão, desenvolvendo ritmo, coordenação e expressão musical.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/reforco.jpg" alt="Reforço Escolar">
+                    </div>
+                    <div class="card-content">
+                        <h3>Reforço Escolar</h3>
+                        <p>Aulas de reforço para alunos do ensino fundamental, auxiliando no desenvolvimento educacional.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/cabeleireiro.jpg" alt="Curso de Cabeleireiro">
+                    </div>
+                    <div class="card-content">
+                        <h3>Curso de Cabeleireiro</h3>
+                        <p>Capacitação profissional em corte de cabelo, penteados e cuidados capilares.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/artesanato.jpg" alt="Artesanato">
+                    </div>
+                    <div class="card-content">
+                        <h3>Curso de Ponto em Cruz e Crochê</h3>
+                        <p>Oficinas de artesanato que ensinam técnicas de ponto cruz e crochê para geração de renda.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/teatro.jpg" alt="Teatro">
+                    </div>
+                    <div class="card-content">
+                        <h3>Teatro e Dança</h3>
+                        <p>Atividades artísticas que desenvolvem expressão corporal, criatividade e autoestima.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Realizados -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Projetos Realizados</h2>
+        <div class="cards-container">
+            <!-- Projeto 1: Andar de Pernas de Pau -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/pernas-de-pau.jpg" alt="Andar de Pernas de Pau">
+                </div>
+                <div class="card-content">
+                    <h3>Andar de Pernas de Pau</h3>
+                    <p>Projeto que ensinou crianças e adolescentes a andar de pernas de pau, desenvolvendo equilíbrio e coordenação motora.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 2: Atores Mirins -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/atores-mirins.jpg" alt="Atores Mirins - Show do Bolota">
+                </div>
+                <div class="card-content">
+                    <h3>Atores Mirins - Show do Bolota</h3>
+                    <p>Iniciamos crianças como atores mirins no espetáculo "Show do Bolota", desenvolvendo talentos artísticos.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 3: Paixão de Cristo -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/paixao-cristo.jpg" alt="Paixão de Cristo">
+                </div>
+                <div class="card-content">
+                    <h3>Paixão de Cristo</h3>
+                    <p>Realização da encenação da Paixão de Cristo em parceria com o grupo Vozes Latina de Jaboatão.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 4: Corte de Cabelo Gratuito -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/corte-cabelo.jpg" alt="Ação Social - Corte de Cabelo Gratuito">
+                </div>
+                <div class="card-content">
+                    <h3>Ação Social - Corte de Cabelo Gratuito</h3>
+                    <p>Oferecemos cortes de cabelo gratuitos para a comunidade, promovendo autoestima e cuidado pessoal.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 5: Bloco Carnavalesco -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/teatro-folia.jpg" alt="Bloco Carnavalesco Teatro em Folia">
+                </div>
+                <div class="card-content">
+                    <h3>Bloco Carnavalesco "Teatro em Folia"</h3>
+                    <p>Criação de um bloco carnavalesco que uniu teatro e folia de momo, levando cultura e alegria para as ruas.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 6: Aula de Origami (NOVO) -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/origami.jpg" alt="Aula de Origami na Escola Nova Avisado">
+                </div>
+                <div class="card-content">
+                    <h3>Aula de Origami na Escola Nova Avisado</h3>
+                    <p>Oficinas de origami realizadas na Escola Nova Avisado, desenvolvendo concentração, habilidades manuais e criatividade.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 7: Exposição na Universidade Federal (NOVO) -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/exposicao-uf.jpg" alt="Exposição na Universidade Federal">
+                </div>
+                <div class="card-content">
+                    <h3>Exposição na Universidade Federal</h3>
+                    <p>Participação em exposição na Universidade Federal de Pernambuco, mostrando o trabalho artístico desenvolvido no ISCEV.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 8: Projeto Múltiplos Saberes (NOVO) -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/multiplos-saberes.jpg" alt="Projeto Múltiplos Saberes">
+                </div>
+                <div class="card-content">
+                    <h3>Projeto Múltiplos Saberes</h3>
+                    <p>Projeto que integra diferentes conhecimentos e habilidades, promovendo o desenvolvimento integral dos participantes.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 9: Casa da Cultura (NOVO) -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/casa-cultura.jpg" alt="Apresentação na Casa da Cultura">
+                </div>
+                <div class="card-content">
+                    <h3>Apresentação na Casa da Cultura de Jaboatão</h3>
+                    <p>Realização de apresentações artísticas e culturais na Casa da Cultura de Jaboatão, divulgando nossos talentos.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 10: Projovem Curado IV (NOVO) -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/projovem.jpg" alt="Encerramento do Projovem no Curado IV">
+                </div>
+                <div class="card-content">
+                    <h3>Encerramento do Projovem no Curado IV</h3>
+                    <p>Cerimônia de encerramento da turma do Projovem realizada no Curado IV, celebrando a conclusão do programa.</p>
+                </div>
+            </div>
+
+            <!-- Projeto 11: Câmara Municipal (NOVO) -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/camara-municipal.jpg" alt="Exposição na Câmara Municipal">
+                </div>
+                <div class="card-content">
+                    <h3>Exposição na Câmara Municipal de Jaboatão</h3>
+                    <p>Exposição de artesanato na Câmara Municipal dos Vereadores de Jaboatão dos Guararapes, valorizando nossa produção cultural.</p>
+                </div>
+            </div>
+
+            <!-- Projetos adicionais sem imagens (se necessário) -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/projetos/gritos-excluidos.jpg" alt="Gritos dos Excluídos">
+                </div>
+                <div class="card-content">
+                    <h3>Gritos dos Excluídos</h3>
+                    <p>Participação no evento "Gritos dos Excluídos" no centro do Recife, dando voz às demandas sociais.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- <!-- Galeria -->
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h2 class="section-title">Nossa Galeria</h2>
+        <div class="gallery-grid">
+            <!-- Item 1: Atividades do ISCEV -->
+            <div class="gallery-item" onclick="openGallery('atividades')">
+                <img src="images/galeria/atividade-destaque.jpg" alt="Atividade do ISCEV">
+                <div class="gallery-caption">
+                    <h3>Atividades do ISCEV</h3>
+                    <p>Clique para ver 4 fotos</p>
+                </div>
+                <div class="gallery-overlay">
+                    <span>Ver 4 Fotos</span>
+                </div>
+            </div>
+
+            <!-- Item 2: Evento Comunitário -->
+            <div class="gallery-item" onclick="openImage('images/galeria/foto2.jpg', 'Evento comunitário')">
+                <img src="images/galeria/foto2.jpg" alt="Evento comunitário">
+                <div class="gallery-caption">
+                    <h3>Evento Comunitário</h3>
+                    <p>Encontro com a comunidade</p>
+                </div>
+                <div class="gallery-overlay">
+                    <span>Ampliar Foto</span>
+                </div>
+            </div>
+
+            <!-- Item 3: Aula Prática -->
+            <div class="gallery-item" onclick="openImage('images/galeria/foto3.jpg', 'Aula prática')">
+                <img src="images/galeria/foto3.jpg" alt="Aula prática">
+                <div class="gallery-caption">
+                    <h3>Aula Prática</h3>
+                    <p>Momento de aprendizagem</p>
+                </div>
+                <div class="gallery-overlay">
+                    <span>Ampliar Foto</span>
+                </div>
+            </div>
+
+            <!-- Item 4: Apresentação Cultural -->
+            <div class="gallery-item" onclick="openImage('images/galeria/foto4.jpg', 'Apresentação cultural')">
+                <img src="images/galeria/foto4.jpg" alt="Apresentação cultural">
+                <div class="gallery-caption">
+                    <h3>Apresentação Cultural</h3>
+                    <p>Show de talentos</p>
+                </div>
+                <div class="gallery-overlay">
+                    <span>Ampliar Foto</span>
+                </div>
+            </div>
+
+            <!-- Item 5: Trabalho em Grupo -->
+            <div class="gallery-item" onclick="openImage('images/galeria/foto5.jpg', 'Trabalho em grupo')">
+                <img src="images/galeria/foto5.jpg" alt="Trabalho em grupo">
+                <div class="gallery-caption">
+                    <h3>Trabalho em Grupo</h3>
+                    <p>Atividade coletiva</p>
+                </div>
+                <div class="gallery-overlay">
+                    <span>Ampliar Foto</span>
+                </div>
+            </div>
+
+            <!-- Item 6: Celebração Comunitária -->
+            <div class="gallery-item" onclick="openImage('images/galeria/foto6.jpg', 'Celebração comunitária')">
+                <img src="images/galeria/foto6.jpg" alt="Celebração comunitária">
+                <div class="gallery-caption">
+                    <h3>Celebração Comunitária</h3>
+                    <p>Festa da comunidade</p>
+                </div>
+                <div class="gallery-overlay">
+                    <span>Ampliar Foto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para Galeria em Tela Cheia -->
+<div id="galleryModal" class="gallery-modal">
+    <!-- Conteúdo para galerias com múltiplas imagens -->
+    <div class="multi-gallery-content">
+        <span class="close-btn">&times;</span>
+        
+        <!-- Imagem Principal Ampliada -->
+        <div class="main-image-container">
+            <img id="mainGalleryImage" src="" alt="">
+        </div>
+        
+        <!-- Controles de Navegação -->
+        <div class="gallery-controls">
+            <button class="gallery-btn prev-btn">&#10094;</button>
+            <div class="gallery-info">
+                <span id="imageCounter">1/4</span>
+            </div>
+            <button class="gallery-btn next-btn">&#10095;</button>
+        </div>
+        
+        <!-- Miniaturas -->
+        <div class="gallery-thumbnails" id="galleryThumbnails">
+            <!-- As miniaturas serão geradas aqui pelo JavaScript -->
+        </div>
+    </div>
+
+    <!-- Conteúdo para imagem única -->
+    <div class="single-gallery-content">
+        <span class="close-btn">&times;</span>
+        <div class="main-image-container">
+            <img id="singleImage" src="" alt="">
+        </div>
+    </div>
+</div>
+    <!-- Contato -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Localização</h3>
+                            <p>Engenho Velho, Jaboatão dos Guararapes - PE, Brasil</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>sergio.santossilva@ufpe.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefone</h3>
+                            <p>(81)98804-9745</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/sergio.santos.907417" target="_blank" title="Facebook" style="color: #1877F2 !important;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/sergiosantos_pe/?igsh=ODczcm04bmphazh4#" target="_blank" title="Instagram" style="color: #E4405F !important;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@ufpeoficial?si=B4AGdkZPiIxbdS-l" target="_blank" title="YouTube" style="color: #FF0000 !important;"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/5581988049745?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20do%20ISCEV" 
+   target="_blank" 
+   title="WhatsApp"
+   style="color: #25D366 !important;">
+    <i class="fab fa-whatsapp"></i>
+</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ISCEV</h3>
+                    <p>Instituto Social e Cultural de Engenho Velho</p>
+                    <p>CNPJ: 09.057.152/0001-03</p>
+                    <p>Transformando vidas através da cultura e educação.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#activities">Atividades</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Atividades</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Capoeira</a></li>
+                        <li><a href="#">Aulas de Percussão</a></li>
+                        <li><a href="#">Reforço Escolar</a></li>
+                        <li><a href="#">Curso de Cabeleireiro</a></li>
+                        <li><a href="#">Artesanato</a></li>
+                        <li><a href="#">Teatro e Dança</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Engenho Velho, Jaboatão dos Guararapes - PE</p>
+                    <p><i class="fas fa-envelope"></i> contato@iscev.org.br</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/5581988049745?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20trabalho%20do%20ISCEV" 
+   target="_blank" 
+   title="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ISCEV - Instituto Social e Cultural de Engenho Velho. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
