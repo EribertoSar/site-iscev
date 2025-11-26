@@ -364,18 +364,6 @@ section {
     position: relative;
 }
 
-.main-image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 140px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
 .gallery-content img {
     max-width: 100%;
     max-height: 100%;
@@ -450,6 +438,9 @@ section {
     background: rgba(0,0,0,0.5);
     padding: 10px 20px;
     border-radius: 5px;
+    display: flex; /* ADICIONADO */
+    align-items: center; /* ADICIONADO */
+    gap: 15px; /* ADICIONADO */
 }
 
 .gallery-thumbnails {
@@ -499,6 +490,17 @@ section {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* ===== ADIÇÕES PARA A GALERIA MELHORADA ===== */
+.gallery-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-left: 15px;
 }
 
 /* ===== REDES SOCIAIS COLORIDAS ===== */
@@ -676,7 +678,7 @@ footer {
     color: #aaa;
 }
 
-/* Responsividade */
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -744,6 +746,17 @@ footer {
         width: 60px;
         height: 45px;
     }
+
+    /* ADIÇÕES PARA RESPONSIVIDADE DA GALERIA */
+    .gallery-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .gallery-title {
+        margin-left: 0;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -769,5 +782,76 @@ footer {
     .gallery-btn {
         font-size: 18px;
         padding: 10px 14px;
+    }
+}
+/* ===== ESTILOS PARA O TÍTULO DA IMAGEM ===== */
+
+.image-title-container {
+    position: absolute;
+    bottom: 140px; /* Acima das miniaturas */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1001;
+    padding: 0 20px;
+}
+
+#imageTitle {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    max-width: 80%;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Ajuste a altura do container principal para acomodar o título */
+.main-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 180px); /* Aumentado para dar espaço ao título */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Responsividade para o título */
+@media (max-width: 768px) {
+    .image-title-container {
+        bottom: 120px;
+    }
+    
+    #imageTitle {
+        font-size: 1.1rem;
+        padding: 8px 16px;
+        max-width: 90%;
+    }
+    
+    .main-image-container {
+        height: calc(100% - 160px);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-title-container {
+        bottom: 100px;
+    }
+    
+    #imageTitle {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+    
+    .main-image-container {
+        height: calc(100% - 140px);
     }
 }
